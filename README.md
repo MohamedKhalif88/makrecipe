@@ -1,6 +1,6 @@
-# README
 
-testing specs for Recipe:
+
+# testing specs for Recipe:
 * name: string
 * summary: text
 * description: text
