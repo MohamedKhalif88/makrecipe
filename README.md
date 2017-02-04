@@ -1,14 +1,13 @@
 
 
-# testing specs for Recipe:
-* name: string
-* summary: text
-* description: text
+# testing specs for Chefs:
 
-* -name must be present
-* -name must be between 5 characters and less than 100 characters
-* -summary must be present
-* -summary must be between 10 characters and less than 150 characters
-* -description must be present
-* -description must be between 20 characters and less than 500 characters
-* -chef_id must be present
+* chefname: string
+* email: string
+
+
+ -chefname must be present
+ -chefname must be between 3 characters and 40 characters
+ -email must be present
+ -email must be unique (will be used for login later)
+ -email must be valid
