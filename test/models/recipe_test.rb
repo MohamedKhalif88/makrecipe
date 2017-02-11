@@ -2,7 +2,7 @@ require 'test_helper'
 class RecipeTest < ActiveSupport::TestCase
     def setup
       @chef = Chef.create(chefname: "mak", email:"mak@example.com")
-      @recipe = @chef.recipes.build(name:"anjero malawax",summary: "this is the best pancake by somalis",
+      @recipe = @chef.recipes.create(name:"anjero malawax",summary: "this is the best pancake by somalis",
                 description: "mix wheat flour with water, koroga vizuri,
                 put a flat frying pan on the jiko,smear some oil,
                 pour some of the mixture on the frying pan,flating it,
