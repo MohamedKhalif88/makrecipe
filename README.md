@@ -11,3 +11,11 @@
  -email must be present
  -email must be unique (will be used for login later)
  -email must be valid
+
+
+........................
+
+#for login session:
+
+-update the ApplicationController class
+-add some action to the ApplicationController 
