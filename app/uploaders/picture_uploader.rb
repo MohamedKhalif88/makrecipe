@@ -1,13 +1,17 @@
 class PictureUploader < CarrierWave::Uploader::Base
 
    include CarrierWave::MiniMagick
-   process resize_to_limit: [600,600]
-  # Include RMagick or MiniMagick support:
+   process :resize_to_limit => [600,600]
+  #Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  if Rails.env.production?
+    storage :fog
+  else
+    storage :file
+  end
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
